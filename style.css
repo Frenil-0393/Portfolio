@@ -37,6 +37,10 @@
   box-shadow: 20px 20px rgb(222, 222, 222);
   border-radius: 10px;
 }
+.middlebutton{
+  display: flex;
+  justify-content: center;
+}
 
 .edu {
   background-image: url('education-back.jpg');
@@ -53,16 +57,24 @@
   text-align: center;
 }
 
+.rightmobile {
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+}
+
+
 .left img {
-  width: 60%;
+  width: 100%;
   height: auto;
-  max-width: 300px;
+  max-width: 400px;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
 
 .right {
   margin-top: 7%;
-  margin-right: 10%;
+  margin-left: 10%;
   width: 100%;
   color: black;
   text-align: left;
@@ -142,6 +154,13 @@
   width: 42px;
   padding-left: 20px;
 }
+.rightmobile{
+  margin-top: 7%;
+  margin-right: 10%;
+  width: 100%;
+  color: black;
+  text-align: left;
+}
 
 @media (max-width: 768px) {
   .topnav a {
@@ -154,8 +173,40 @@
     margin: 6% 5%;
   }
 
+  .tw2, .tw, .th {
+    font-size: 16px;
+  }
+  
+
+  .center{
+    margin: 4% 10%;
+  }
   .left, .right {
     width: 100%;
     padding: 20px;
+  }
+  .left img {
+    margin-top: 35px;
+    max-width: 80%;
+  }
+  .middle {
+    display: flex;
+    background-color: rgb(184, 184, 184);
+    margin-right: 6%;
+    margin-bottom: 6%;
+    height: auto;
+    width: auto;
+    box-shadow: 20px 20px rgb(222, 222, 222);
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
+  .rightmobile {
+    font-size: 16px;
+    width: 80%;
+    text-align: left;
   }
 }
